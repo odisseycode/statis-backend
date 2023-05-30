@@ -15,3 +15,16 @@ model User {
   name    String
   email   String
 }
+
+model DataGroup {
+  id      String //apply uuid
+  title   String
+  userId  String //apply relations
+}
+
+model Column {
+  id          String //apply uuid
+  name        String
+  dataGroupId String //apply relations
+  data        Number[]
+}
