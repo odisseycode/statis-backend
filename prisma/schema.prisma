@@ -11,20 +11,20 @@ datasource db {
 }
 
 model User {
-  id      String //apply uuid
-  name    String
-  email   String
+  id    String @id @default(uuid())
+  name  String
+  email String
 }
 
 model DataGroup {
-  id      String //apply uuid
-  title   String
-  userId  String //apply relations
+  id     String @id @default(uuid())
+  title  String
+  userId String
 }
 
 model Column {
-  id          String //apply uuid
+  id          String    @id @default(uuid())
   name        String
-  dataGroupId String //apply relations
-  data        Number[]
+  dataGroupId String
+  data        Decimal[]
 }
