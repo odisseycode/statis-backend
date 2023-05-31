@@ -1,0 +1,1 @@
+DATABASE_URL="postgresql://dbname:dbpassword@localhost:PORT/dbname?schema=SCHEMA"
