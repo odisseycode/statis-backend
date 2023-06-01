@@ -28,3 +28,9 @@ model Column {
   dataGroupId String
   data        Decimal[]
 }
+
+model DataResponse {
+  id          String    @id @default(uuid())
+  dataGroupId String
+  response    Decimal[]
+}
